@@ -1,0 +1,83 @@
+/* first add link to index file link:::<link rel="stylesheet" media="screen and (max-width:950px)" href="css/phone.css"> and arrange all css with help of inspect and change css for phone.  */
+.navbar{
+    flex-direction: column;
+}
+.navbar ul li {
+    font-size: 0.9rem;
+}
+.navbar ul li a {
+    padding: 6px 8px;
+}
+.home p{
+    font-size: 1rem;
+}
+.home .btn {
+    margin: 23px 34px;
+    padding: 2px 2px;
+    width: 150px;
+    height: 44px;
+    font-size: 1rem;
+}
+.home::before {
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.services{
+    flex-direction: column;
+    margin: 0px 0px;
+    padding: 30px 40px;
+}
+.services .box {
+    
+    margin: 17px 0px;
+    padding: 10px 8px;
+    height: 250px;
+    
+}
+
+.services .box img {
+
+    width: 70px;
+    height: 56px;
+
+}
+.client {
+    height: 200px;
+  
+}
+.client .cl .items{
+    padding: 20px;   
+
+}
+
+.items img{
+    height: 20px;
+}
+.contact-box{
+    padding: 10px 0px;
+    justify-content: left;
+}
+.contact-box form{
+    height: 100%;
+}
+.contact-box input,
+.contact-box textarea{
+    width:50%;
+    padding : 0.5rem;
+    font-size: 5px;
+}
+.contact-box button{
+    height: 44px;
+    width: 80%;
+    margin: 2px;
+
+    font-size: 1rem;
+    
+}
+
+.pr{
+    font-size: 1.2rem;
+    margin: 12px 10px;
+}

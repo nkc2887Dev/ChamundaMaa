@@ -1,0 +1,266 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* <!-- scroll only used with id not class so be carefull --> */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+
+    margin: 1px 3px;
+}
+
+.logo img {
+    border-radius: 50px;
+    margin: 0px 0px;
+    height: 60px;
+    width: 100%;
+    margin: 2px 2px;
+}
+
+.navbar ul {
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    margin: 2px 50px;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navbar ul li a {
+    display: block;
+    color: black;
+    padding: 6px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.navbar ul li a:hover {
+
+    color: black;
+    background-color: white;
+
+}
+
+.home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* padding: 10px; */
+}
+
+.home::before {
+    content: "";
+    background: url('../img/bg7.png ') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.home p {
+    /* font-family: 'Oswald', sans-serif; */
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 8px 20px;
+    font-weight: bold;
+}
+
+.home .btn {
+    justify-content: flex-end;
+    margin: 23px 34px;
+    padding: 2px 2px;
+    border: 2px solid black;
+    width: 220px;
+    height: 44px;
+    background-color: rgb(227 196 133);
+    border-radius: 40px;
+    font-size: 1.3rem;
+}
+
+.home .btn:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.container {
+    display: block;
+    margin: -100px 2px;
+}
+
+.services {
+    display: flex;
+    /* border: 2px solid brown; */
+    text-align: center;
+    margin: 32px 100px;
+    padding: 30px 40px;
+
+}
+
+.services .box {
+    background-color: #f7f7f2;
+    display: block;
+    margin: 17px 23px;
+    padding: 10px 34px;
+    height: 250px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.services .box img {
+
+    width: 85px;
+    height: 70px;
+
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    height: 300px;
+    margin: 82px 0px;
+}
+.client::before{
+    content: "";
+    background: url('../img/bg8.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.client .cl {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  
+}
+.client .cl .items{
+    padding: 34px;   
+
+}
+
+.items img{
+    height: 60px;
+}
+
+.contact{
+    position: relative;
+    
+}
+.contact::before{
+    content: "";
+    background: url('../img/contact3.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-bottom: 34px;
+    padding: 23px 442px;
+}
+.contact-box input,
+.contact-box textarea{
+    width:100%;
+    padding : 0.5rem;
+    font-size: 15px;
+    opacity: 0.5;
+
+}
+
+.contact-box form{
+    width: 100%;
+    
+
+}
+.contact-box label{
+    font-size: 20px;
+    width: 40%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    
+}
+.contact-box button{
+    height: 44px;
+    width: 100%;
+    margin: 8px;
+    text-align: center;
+    background-color: rgb(227 196 133);
+    border-radius: 40px;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+.contact-box button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+/* UTILITY CSS */
+.pr {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 30px 34px;
+    text-decoration: underline;
+}
+
+.sc {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px 34px;
+}
+.center{
+    /* border: 2px solid red; */
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    width: 60%;
+    font-weight: bold;
+}
